@@ -9,9 +9,8 @@ export const MyPosts = () => {
             </div>
 
             <div className={classes.posts}>
-                <Posts />
-                <Posts />
-                <Posts />
+                <Posts massage='Hi how are you?'likesCount='5'/>
+                <Posts massage='It is my first post' likesCount='23'/>
             </div>
         </div>
     );

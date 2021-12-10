@@ -1,12 +1,12 @@
 import classes from './Posts.module.css'
 
-export const Posts = () => {
+export const Posts = (props) => {
     return (
         <div className={classes.item}>
             <img src='https://www.w3schools.com/howto/img_avatar2.png'/>
-            post1
+            {props.massage}
             <div>
-                <span>like</span>
+                <span>like</span> {props.likesCount}
             </div>
         </div>
     );
