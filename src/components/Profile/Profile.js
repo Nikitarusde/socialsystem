@@ -1,4 +1,5 @@
 import classes from './Profile.module.css'
+import {MyPosts} from "./MyPosts/MyPosts";
 
 export const Profile = () => {
    return (
@@ -9,23 +10,7 @@ export const Profile = () => {
            <div>
                <img src='https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg'/>
            </div>
-           <div>
-               My posts
-               <div>
-                   New posts
-               </div>
-           </div>
-           <div>
-               <div className={classes.item}>
-                   post1
-               </div>
-               <div className={classes.item}>
-                   post2
-               </div>
-               <div className={classes.item}>
-                   post3
-               </div>
-           </div>
+           <MyPosts />
        </div>
    );
 }
