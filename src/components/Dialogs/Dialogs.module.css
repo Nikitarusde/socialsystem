@@ -5,9 +5,10 @@
 
 .dialogsItems {
     padding: 10px;
+    text-decoration: none;
 }
 
-.dialogsItems .active{
+.active{
     color: gold;
 }
 
