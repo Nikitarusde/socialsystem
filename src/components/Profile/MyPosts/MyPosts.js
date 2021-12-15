@@ -3,13 +3,18 @@ import {Posts} from "./Post/Posts";
 
 export const MyPosts = () => {
     return (
-        <div>My posts
+        <div className={classes.postsBlock}>
+            <h3> My posts </h3>
             <div>
-                New posts
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <button>Add post</button>
+                </div>
             </div>
-
             <div className={classes.posts}>
-                <Posts massage='Hi how are you?'likesCount='5'/>
+                <Posts massage='Hi how are you?' likesCount='5'/>
                 <Posts massage='It is my first post' likesCount='23'/>
             </div>
         </div>
