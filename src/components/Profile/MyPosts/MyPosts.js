@@ -3,10 +3,14 @@ import {Posts} from "./Post/Posts";
 
 export const MyPosts = () => {
 
-    let postsData = [
+    let posts = [
         {id: 1, post: "Hi how are you?", likesCount: 5},
         {id: 2, post: "It is my first post", likesCount: 23},
+        {id: 2, post: "It is my first post", likesCount: 23},
+        {id: 2, post: "It is my first post", likesCount: 23},
     ]
+
+    let postsElements = posts.map( p => <Posts massage={p.post} id={p.id} likesCount={p.likesCount}/>);
 
     return (
         <div className={classes.postsBlock}>
@@ -20,8 +24,7 @@ export const MyPosts = () => {
                 </div>
             </div>
             <div className={classes.posts}>
-                <Posts massage={postsData[0].post} id={postsData[0].id} likesCount={postsData[0].likesCount}/>
-                <Posts massage={postsData[1].post} id={postsData[1].id} likesCount={postsData[1].likesCount}/>
+                {postsElements}
             </div>
         </div>
     );
