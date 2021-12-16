@@ -6,6 +6,7 @@ export const DialogItem = (props) => {
         <div>
             <NavLink to={"/dialogs/" + props.id}
                      className={({isActive}) => isActive ? classes.active : classes.dialogsItems}>
+                <img className={classes.avatar} src='https://www.w3schools.com/howto/img_avatar2.png'/>
                 {props.name}
             </NavLink>
         </div>
